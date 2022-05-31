@@ -1,0 +1,22 @@
+body {
+    background-image: url('https://payload.cargocollective.com/1/9/297204/14264736/GROBO_REI_SCENICTRAILMAP_FINAL_1250.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgb(230, 230, 52);
+    text-shadow: 0 0 3px #000000;
+
+}
+
+a {
+    color:rgb(230, 230, 52);
+}
+a:hover {
+    color: rgb(90, 222, 145);
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: black;
+}

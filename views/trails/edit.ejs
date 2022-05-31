@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/app.css">
     <title>TrailsTracker</title>
 </head>
 
@@ -14,7 +15,11 @@
         <nav>
             <ul>
                 <li>
-                    <a href="/trails/<%= trail._id %>">Trails</a>
+                    <a href="/trails/<%= trail._id %>">Back to My Trail</a>
+                </li>
+               
+                <li>
+                    <a href="/trails">My Trail List</a> 
                 </li>
             </ul>
         </nav>
@@ -22,12 +27,12 @@
     <main>
         <h2>Trail Info</h2>
         <form action="/trails/<%= trail._id %>?_method=PUT" method="POST">
-            Name: <br /><input type="text" name="name" value="<%= trail.name %>" /><br />
-            Length: <br /><input type="text" name="name" value="<%=trail.length %>" /><br />
-            Difficulty: <br /><input type="text" name="name" value="<%=trail.difficulty %>" /><br />
-            POI: <br /><input type="text" name="name" value="<%=trail.poi %>" /><br />
-            Notes: <br /><input type="text" name="notes" value="<%=trail.notes %>"></textarea><br />
-            <br /><input type="submit" value="Update Trail Info" />
+            Name <br /><input type="text" name="name" value="<%= trail.name %>" /><br />
+            Length <br /><input type="text" name="name" value="<%=trail.length %>" /><br />
+            Difficulty <br /><input type="text" name="name" value="<%=trail.difficulty %>" /><br />
+            POI <br /><input type="text" name="name" value="<%=trail.poi %>" /><br />
+            Notes <br /><input type="text" name="notes" value="<%=trail.notes %>"></textarea><br />
+            <input type="submit" value="Update Trail Info" />
         </form>
     </main>
 </body>

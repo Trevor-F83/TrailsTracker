@@ -3,7 +3,13 @@ const express = require('express')
 const mongoose = require('mongoose')
 const methodOverride = require('method-override')
 const trailsController = require('./controllers/trails.js')
+
+
+// console.log(process.env)
+
 const app = express()
+app.use(express.static('public'))
+// app.use('/assets', express.static('public'))
 
 app.use(methodOverride('_method'))
 app.use(express.urlencoded({ extended: false }))
