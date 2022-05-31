@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrailsTracker</title>
+</head>
+
+<body>
+    <header>
+        <h1>Edit <%= trail.name %>'s Info</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/trails/<%= trail._id %>">Trails</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Trail Info</h2>
+        <form action="/trails/<%= trail._id %>?_method=PUT" method="POST">
+            Name: <br /><input type="text" name="name" value="<%= trail.name %>" /><br />
+            Length: <br /><input type="text" name="name" value="<%=trail.length %>" /><br />
+            Difficulty: <br /><input type="text" name="name" value="<%=trail.difficulty %>" /><br />
+            POI: <br /><input type="text" name="name" value="<%=trail.poi %>" /><br />
+            Notes: <br /><input type="text" name="notes" value="<%=trail.notes %>"></textarea><br />
+            <br /><input type="submit" value="Update Trail Info" />
+        </form>
+    </main>
+</body>
+
+</html>

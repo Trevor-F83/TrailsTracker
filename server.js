@@ -1,13 +1,13 @@
 require('dotenv').config()
 const express = require('express')
-const app = express()
-const trailsController = require('./controllers/trails.js')
 const mongoose = require('mongoose')
 const methodOverride = require('method-override')
+const trailsController = require('./controllers/trails.js')
+const app = express()
 
-app.use('/trails', trailsController)
+app.use(methodOverride('_method'))
 app.use(express.urlencoded({ extended: false }))
-app.use(methodOverride('_methood'))
+app.use('/trails', trailsController)
 
 mongoose.connect(process.env.DATABASE_URL, {})
 

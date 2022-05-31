@@ -20,11 +20,26 @@ router.get('/new', (req, res) => {
     res.render('trails/new.ejs')
 })
 
+router.get('/:id/edit', (req,res) => {
+    Trail.findById(req.params.id, (err, foundTrail) => {
+        res.render('trails/edit.ejs', {
+            trail: foundTrail
+        })
+    })
+})
+
+
 router.get('/:id', (req, res) => {
     Trail.findById(req.params.id, (err, foundTrail) => {
         res.render('trails/show.ejs', {
             trail: foundTrail
         })
+    })
+})
+
+router.put('/:id', (req, res) => {
+    Trail.findByIdAndUpdate(req.params.id, req.body, () => {
+        res.redirect('/trails')
     })
 })
 
