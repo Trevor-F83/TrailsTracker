@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/app.css">
     <title>TrailsTracker</title>
+
 </head>
 
 <body>
@@ -16,21 +17,23 @@
         </h1>
     </header>
     <main>
-        <li>
-            <a href="/">Home</a>
-        </li>
-        <li>
-            <a href="/trails">Trails My Trail List</a>
-        </li>
+        <ul class="showLinks" style="list-style: none">
+          <li>
+              <a href="/">Home</a>
+          </li>
+          <li>
+              <a href="/trails">My Trail List</a>
+          </li>
+        </ul>
 
-        <section>
-            <h2>Trail Specs</h2>
-            <ul>
-                <li>Name: <%= trail.name %></li><br />
-                <li>Length: <%= trail.length %></li><br />
-                <li>Difficulty: <%= trail.difficulty %></li><br />
-                <li>POI: <%= trail.poi %></li><br />
-                <li>Notes: <%= trail.notes %></li><br />
+        <section calss="showSec">
+            <h2 class="showhd">Trail Specs</h2>
+            <ul class="trailInfo" style="list-style: none">
+                <li class="showLi">Name: <%= trail.name %></li>
+                <li class="showLi">Length: <%= trail.length %></li>
+                <li class="showLi">Difficulty: <%= trail.difficulty %></li>
+                <li class="showLi">POI: <%= trail.poi %></li>
+                <li class="showLi">Notes: <%= trail.notes %></li>
             </ul>
         </section>
         <section>

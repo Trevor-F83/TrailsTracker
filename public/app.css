@@ -1,18 +1,24 @@
-body {
-    background-image: url('https://payload.cargocollective.com/1/9/297204/14264736/GROBO_REI_SCENICTRAILMAP_FINAL_1250.jpg');
-    background-repeat: no-repeat;
+html {
+    background: radial-gradient(340px, rgb(189, 171, 162), rgba(128, 63, 2, 0.58)), url('https://payload.cargocollective.com/1/9/297204/14264736/GROBO_REI_SCENICTRAILMAP_FINAL_1250.jpg') no-repeat center center fixed; 
+    margin: 20px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; 
-    font-size: 25px;
+}
+
+
+body {
+  
+    font-size: 22.5px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color:rgb(230, 230, 52);
     text-shadow: 0 0 3px #000000;
-
+    margin: 0;
 }
 
 a {
+
     color:rgb(230, 230, 52);
 }
 a:hover {
@@ -20,3 +26,47 @@ a:hover {
     -webkit-text-stroke-width: .5px;
     -webkit-text-stroke-color: black;
 }
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 0vh;
+    margin-bottom: 0px;
+}
+/* section {
+    display: flex;
+    justify-content: center;
+} */
+
+.trailInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+}
+
+ .showhd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%
+}  
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+
+/* .container {
+
+} */

@@ -11,11 +11,11 @@
     <header>
         <h1>Favorite Trails</h1>
         <nav>
-            <ul>
-                <li>
+            <ul style="list-style: none">
+                <li style="list-style: none">
                     <a href="/">Home</a>
                 </li>
-                <li>
+                <li style="list-style: none">
                     <a href="/trails/new">Add to My Favorite Trails</a>
                 </li>
             </ul>
@@ -23,9 +23,9 @@
     </header>
     <main>
         <h2>My Trails List</h2>
-        <ul>
+        <ul style="list-style: none">
             <% for(let i = 0; i < trails.length; i++) { %>
-            <li>
+            <li style="list-style: none">
                 <a href="/trails/<%= trails[i]._id %>"><%= trails[i].name %></a>
             </li>
             <% } %>
