@@ -2,6 +2,7 @@
 
 Finally, a way to arganize all your favorite trails and trail notes.
 
+![Project SS 1]https://user-images.githubusercontent.com/103761476/168456672-ffa7c912-ad28-4aea-a151-e6e7786b4eff.png
 
 
 ## Tech Used
