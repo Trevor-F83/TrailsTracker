@@ -10,14 +10,26 @@ router.get('/', (req, res) => {
     })
 })
 
-router.post('/', (req, res) => {
-    Trail.create(req.body, (err, createTrail) => {
+router.get('/new', (req, res) => {
+    res.render('trails/new.ejs')
+})
+
+router.delete('/:id', (req, res) => {
+    Trail.findByIdAndRemove(req.params.id, () => {
         res.redirect('/trails')
     })
 })
 
-router.get('/new', (req, res) => {
-    res.render('trails/new.ejs')
+router.put('/:id', (req, res) => {
+    Trail.findByIdAndUpdate(req.params.id, req.body, () => {
+        res.redirect(`/trails/${req.params.id}`)
+    })
+})
+
+router.post('/', (req, res) => {
+    Trail.create(req.body, (err, createdTrail) => {
+        res.redirect('/trails')
+    })
 })
 
 router.get('/:id/edit', (req,res) => {
@@ -28,7 +40,6 @@ router.get('/:id/edit', (req,res) => {
     })
 })
 
-
 router.get('/:id', (req, res) => {
     Trail.findById(req.params.id, (err, foundTrail) => {
         res.render('trails/show.ejs', {
@@ -37,16 +48,6 @@ router.get('/:id', (req, res) => {
     })
 })
 
-router.put('/:id', (req, res) => {
-    Trail.findByIdAndUpdate(req.params.id, req.body, () => {
-        res.redirect('/trails')
-    })
-})
 
-router.delete('/:id', (req, res) => {
-    Trail.findByIdAndRemove(req.params.id, () => {
-        res.redirect('/trails')
-    })
-})
 
 module.exports = router
