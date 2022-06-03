@@ -1,6 +1,6 @@
 <h1 align="center">TrailsTracker</h1>
 
-<h3 align="center"> [Click](https://trailstracker-app.herokuapp.com/) to travel to my app! <h3>
+ [Click](https://trailstracker-app.herokuapp.com/) to travel to my app! 
                   
   
 
