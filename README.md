@@ -30,6 +30,6 @@
 <p align="center">Just follow the links to the "add trails" section. Add your trail name, length, diffficulty, points of interest and custom notes. If you ever change your mind, feel free to edit anything you've entered!</p>
 
 <h2 align="center">Future Enhancements</h2>
-<p align="center">In the future, we will implement geolocation to not only find users current heading, weather and weather updates, but also so they can locate hiking trails near them. For our urban explorers and street photographers, we will also be building in functionality for walks in cities and towns that take the user past known points of interest. Further more, will also be utilizing river maps to mark drop off and pick up locations for kayakers, supp and canoers!</p>
+<p align="center">In the future, we will implement geolocation to not only find users current heading, weather and weather updates, but also so they can locate hiking trails near them. For our urban explorers and street photographers, we will also be building in functionality for walks in cities and towns that take the user past known points of interest. Further more, will also be utilizing river maps to mark drop off and pick up locations for kayakers, supp and canoers! Maybe we'll even see a seperate iteration for photographers with the abililty to merge the photographer info with the trails info!</p>
 
 <h1 align="center">Hikers, Urban Jungle Explorers and River Rats, **UNITE**!!!</h1>
