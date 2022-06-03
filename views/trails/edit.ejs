@@ -28,10 +28,10 @@
         <h2>Trail Info</h2>
         <form action="/trails/<%= trail._id %>?_method=PUT" method="POST">
             Name <br /><input type="text" name="name" value="<%= trail.name %>" /><br />
-            Length <br /><input type="text" name="name" value="<%=trail.length %>" /><br />
-            Difficulty <br /><input type="text" name="name" value="<%=trail.difficulty %>" /><br />
-            POI <br /><input type="text" name="name" value="<%=trail.poi %>" /><br />
-            Notes <br /><input type="text" name="name" value="<%=trail.notes %>" /><br />
+            Length <br /><input type="text" name="length" value="<%=trail.length %>" /><br />
+            Difficulty <br /><input type="text" name="difficulty" value="<%=trail.difficulty %>" /><br />
+            POI <br /><input type="text" name="poi" value="<%=trail.poi %>" /><br />
+            Notes <br /><input type="text" name="notes" value="<%=trail.notes %>" /><br />
             <input type="submit" value="Update Trail Info" />
         </form>
     </main>
